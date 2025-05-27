@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Classification Reports</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Maintenance Prediction System</h1>
+        <nav>
+            <a href="/">Go Back</a>
+            <a href="/visuals">View Visuals</a>
+            <a href="/reports">View Classification Reports</a>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Random Forest Classification Report</h2>
+        <pre>{{ rf_report }}</pre>
+
+        <h2>SVM Classification Report</h2>
+        <pre>{{ svm_report }}</pre>
+
+        <h2>Stacking Model Classification Report</h2>
+        <pre>{{ stacking_report }}</pre>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Maintenance Prediction System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

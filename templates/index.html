@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Machine Maintenance Prediction System</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Enter Feature Values</h2>
+        <form method="POST">
+            {% for feature in feature_names %}
+                <label for="{{ feature }}">{{ feature }}</label>
+                <input type="text" name="{{ feature }}" required>
+                <br>
+            {% endfor %}
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Maintenance Prediction System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Visuals</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Maintenance Prediction System</h1>
+        <nav>
+            <a href="/">Go Back</a>
+            <a href="/visuals">View Visuals</a>
+            <a href="/reports">View Classification Reports</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Model Visuals</h1>
+        <h2>Confusion Matrices</h2>
+        <img src="{{ url_for('static', filename='random_forest_confusion_matrix.png') }}" alt="Random Forest Confusion Matrix">
+        <img src="{{ url_for('static', filename='svm_confusion_matrix.png') }}" alt="SVM Confusion Matrix">
+        
+        <h2>Feature Importance</h2>
+        <img src="{{ url_for('static', filename='random_forest_feature_importance.png') }}" alt="Random Forest Feature Importance">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Maintenance Prediction System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

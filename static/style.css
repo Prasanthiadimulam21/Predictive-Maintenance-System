@@ -1,0 +1,104 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background: #007BFF; /* Header background color */
+    color: white; /* Header text color */
+    padding: 10px 20px; /* Header padding */
+    text-align: center; /* Center text */
+}
+
+nav {
+    margin-top: 10px; /* Space above nav */
+}
+
+nav a {
+    margin: 0 15px; /* Space between links */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Max width for container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding inside container */
+    background: white; /* Background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #333; /* Heading text color */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+form input[type="text"],
+form input[type="number"] {
+    margin-bottom: 10px; /* Space below inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+form input[type="submit"] {
+    background: #007BFF; /* Submit button background */
+    color: white; /* Submit button text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+}
+
+form input[type="submit"]:hover {
+    background: #0056b3; /* Darker background on hover */
+}
+
+/* Result message styles */
+.result {
+    margin-top: 20px; /* Space above results */
+    padding: 10px; /* Padding inside result box */
+    border: 1px solid #007BFF; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #e7f3fe; /* Background color */
+    color: #31708f; /* Text color */
+}
+
+/* Preformatted text styles */
+pre {
+    background: #f0f0f0; /* Background color for preformatted text */
+    border: 1px solid #ccc; /* Border color */
+    padding: 10px; /* Padding inside */
+    border-radius: 4px; /* Rounded corners */
+    white-space: pre-wrap; /* Allows text wrapping */
+    word-wrap: break-word; /* Prevents overflow */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Footer padding */
+    background: #007BFF; /* Footer background */
+    color: white; /* Footer text color */
+    position: relative; /* Footer position */
+    bottom: 0; /* Align footer to bottom */
+    width: 100%; /* Full width */
+}
+ 
