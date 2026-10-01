@@ -80,4 +80,4 @@ predictive-maintenance/
 
 ## 📬 Contact
 
-For queries or suggestions, feel free to contact [patanthaseen2004@gmail.com].
+For queries or suggestions, feel free to contact [prasanthiadimulam6@gmail.com].
